@@ -12,4 +12,6 @@ namespace Ammatraks_OY.Model
         public string Username { get; set; }
         public string Password { get; set; }
     }
+
+    // Florint here
 }
