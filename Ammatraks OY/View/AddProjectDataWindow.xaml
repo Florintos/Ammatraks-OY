@@ -1,0 +1,45 @@
+﻿<Window x:Class="Ammatraks_OY.View.AddProjectDataWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ammatraks_OY.View"
+        mc:Ignorable="d"
+        Title="AddProjectDataWindow" Height="400" Width="400">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" ></RowDefinition>
+            <RowDefinition Height="*" ></RowDefinition>
+            <RowDefinition Height="*" ></RowDefinition>
+            <RowDefinition Height="2*" ></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0">
+            <!-- Project Name -->
+            <TextBlock Text="Project Name:" Margin="10"/>
+            <TextBox x:Name="txtProjectName" Margin="10" VerticalAlignment="Center" Width="200"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1">
+            <!-- Project ID -->
+            <TextBlock Text="Project ID:" Margin="10"/>
+            <TextBox x:Name="txtProjectID" Margin="10" VerticalAlignment="Center" Width="200"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2">
+            <!-- Project Description -->
+            <TextBlock Text="Project description:" Margin="10"/>
+            <TextBox x:Name="txtProjectDescription" Margin="10" VerticalAlignment="Center" Width="200"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="3">
+            <!-- Project workers -->
+            <TextBlock Text="Workers:" Margin="10"/>
+            <TextBox x:Name="cmbProjectWorkers" Margin="10" VerticalAlignment="Center" Width="200"/>
+
+            <!-- Save Button -->
+            <Button Content="Save" Margin="0,25,0,0" VerticalAlignment="Center" Width="75" Click="btnSave_Click"/>
+        </StackPanel>
+
+    </Grid>
+</Window>
